@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--title of the project-->
+<title>Interior Design</title>
+<!--Css file-->
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="   crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    </head>
+    <body>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .form-group {
+	margin-top:-5px;
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group input:focus {
+
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .toggle-link {
+      text-align: center;
+      color: #007bff;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .toggle-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="form-title">Price Estimation</h1>
+    <form id="auth-form">
+	<div class="form-group">
+        <label for="user name">Name</label>
+        <input type="username" id="username" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+	<div class="form-group">
+        <label for="phone">Mobile Number</label>
+        <input type="phone" id="phone" placeholder="Enter your mobile number" required>
+      </div>
+
+      <div class="form-group" id="confirm-password-group" style="display: none;">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="Confirm your password">
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <a id="toggle-form" class="toggle-link">Don't have an account? Sign Up</a>
+  </div>
+
+  <script>
+    const formTitle = document.getElementById("form-title");
+    const authForm = document.getElementById("auth-form");
+    const toggleFormLink = document.getElementById("toggle-form");
+    const confirmPasswordGroup = document.getElementById("confirm-password-group");
+
+    let isSignUp = false;
+
+    toggleFormLink.addEventListener("click", () => {
+      isSignUp = !isSignUp;
+      formTitle.textContent = isSignUp ? "Sign Up" : "Login";
+      confirmPasswordGroup.style.display = isSignUp ? "block" : "none";
+      toggleFormLink.textContent = isSignUp
+        ? "Already have an account? Login"
+        : "Don't have an account? Sign Up";
+    });
+
+    authForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (isSignUp) {
+        // Handle sign-up logic here
+        alert("Sign-Up form submitted!");
+      } else {
+        // Handle login logic here
+        alert("Login form submitted!");
+      }
+    });
+  </script>
+        <!--Start home-page-->
+        <div class="home-page">
+            <!--start header -->
+        <div class="header">
+            <img src="C:\Users\BHAVANA\OneDrive\Desktop\hackathon\Interior-Design-main\Image\Donna Stroupe (1).png" alt="Donna Stroupe" style="width: 250px; height: 200px;position: absolute; top: 0; left: 0;">
+            <ul style="margin-left: 200px;">
+                <li> <a href="file:///C:/Users/BHAVANA/OneDrive/Desktop/hackathon/Interior-Design-main/design.html"> Home</a></li>
+                <li><a href="file:///C:/Users/BHAVANA/OneDrive/Desktop/hackathon/Interior-Design-main/dining.html"> Dining</a></li>
+                <li><a href="file:///C:/Users/BHAVANA/OneDrive/Desktop/hackathon/Interior-Design-main/kitchen.html"> Kitchen</a></li>
+                <li><a href="file:///C:/Users/BHAVANA/OneDrive/Desktop/hackathon/Interior-Design-main/backyard.html">Backyard</a></li>
+            </ul>
+        </div>
+        <!--End header -->
+        <!--start content-->
+        <div class="content">
+            <h1></h1>
+            <P> Design your dream home keeping these interior decoration ideas in mind.</P>
+            <div>
+                
+                <button type = " button "><span></span><a href
+="file:///C:/Users/BHAVANA/OneDrive/Desktop/hackathon/Interior-Design-main/contactus.html"> CONTACT US</button>
+            </div>
+        </div>
+        <!--End content -->
+        </div>	
+        <!-- End home-page-->
+    </body>
+    </html>
