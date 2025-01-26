@@ -1,31 +1,26 @@
-# [Project Name] 🎯
+# [The Space Stylist] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [Kaizen]
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: [Bhavana Prasanth] - [SCMS Cochin School of Business]
+- Member 2: [Amirtha Vijayan] - [SCMS Cochin School of Business]
+
 
 ### Hosted Project Link
-[[Project Name]](https://rhea346.github.io/The-Space-Stylist/)
+[[The Space Stylist]](https://rhea346.github.io/The-Space-Stylist/)
 
 ### Project Description
-[2-3 lines about what your project does]
 
-### The Problem statement
-[What ridiculous problem are you solving?]
+An visual idea about the interior design to be used in a mix of styles, patterns, and textures for a unique look. 
 
-### The Solution
-[How are you solving it? Keep it fun!]
 
-## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
+- [HTML and css]
 - [Frameworks used]
 - [Libraries used]
 - [Tools used]
@@ -44,11 +39,10 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![alt text](image.png)
+
+![Screenshot2]
 
 ![Screenshot3](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
